@@ -14,6 +14,8 @@
 		E8750DA42A308E0A00151452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8750DA22A308E0A00151452 /* LaunchScreen.storyboard */; };
 		E8750DAD2A30A81800151452 /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8750DAC2A30A81800151452 /* ChatsVC.swift */; };
 		E8750DAF2A30A84400151452 /* CallsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8750DAE2A30A84400151452 /* CallsVC.swift */; };
+		E8750DB32A31211000151452 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8750DB12A31211000151452 /* SignUpViewController.swift */; };
+		E8750DB42A31211000151452 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8750DB22A31211000151452 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E8750DA52A308E0A00151452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8750DAC2A30A81800151452 /* ChatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsVC.swift; sourceTree = "<group>"; };
 		E8750DAE2A30A84400151452 /* CallsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsVC.swift; sourceTree = "<group>"; };
+		E8750DB12A31211000151452 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E8750DB22A31211000151452 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +76,20 @@
 		E8750DAB2A30A7D200151452 /* Viewcpntrollers */ = {
 			isa = PBXGroup;
 			children = (
+				E8750DB02A31211000151452 /* Authentication */,
 				E8750DAC2A30A81800151452 /* ChatsVC.swift */,
 				E8750DAE2A30A84400151452 /* CallsVC.swift */,
 			);
 			path = Viewcpntrollers;
+			sourceTree = "<group>";
+		};
+		E8750DB02A31211000151452 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E8750DB12A31211000151452 /* SignUpViewController.swift */,
+				E8750DB22A31211000151452 /* LoginViewController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8750DB42A31211000151452 /* LoginViewController.swift in Sources */,
 				E8750DAF2A30A84400151452 /* CallsVC.swift in Sources */,
 				E8750DAD2A30A81800151452 /* ChatsVC.swift in Sources */,
 				E8750D982A308E0500151452 /* AppDelegate.swift in Sources */,
 				E8750D9A2A308E0500151452 /* SceneDelegate.swift in Sources */,
+				E8750DB32A31211000151452 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
