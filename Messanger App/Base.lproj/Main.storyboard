@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BD7-1L-tQ4">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chats-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChatsVC" customModule="Messanger_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSe-RJ-gsI" userLabel="View1">
+                                <rect key="frame" x="20" y="44" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au6-ZR-nk1">
+                                        <rect key="frame" x="0.0" y="10" width="55" height="35"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.1257012784" green="0.12922751900000001" blue="0.14117822050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="list.bullet.rectangle" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjk-lr-YHF">
+                                        <rect key="frame" x="70" y="11.666666666666664" width="61" height="27"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi8-sc-Qsk">
+                                        <rect key="frame" x="250" y="7.6666666666666643" width="56" height="35"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.1257012784" green="0.12922751900000001" blue="0.14117822050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-il-On2">
+                                        <rect key="frame" x="334" y="7.6666666666666643" width="46" height="35"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.1257012784" green="0.12922751900000001" blue="0.14117822050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Vi8-sc-Qsk" firstAttribute="leading" secondItem="SSe-RJ-gsI" secondAttribute="trailing" multiplier="250/374" id="0Ip-Gm-6fR"/>
+                                    <constraint firstItem="au6-ZR-nk1" firstAttribute="top" secondItem="SSe-RJ-gsI" secondAttribute="top" constant="10" id="3JV-QI-HxC"/>
+                                    <constraint firstItem="2OB-il-On2" firstAttribute="leading" secondItem="SSe-RJ-gsI" secondAttribute="trailing" multiplier="334/374" id="Caj-Qx-aPI"/>
+                                    <constraint firstItem="Qjk-lr-YHF" firstAttribute="leading" secondItem="SSe-RJ-gsI" secondAttribute="trailing" multiplier="70/374" id="HuS-yr-zqi"/>
+                                    <constraint firstItem="2OB-il-On2" firstAttribute="centerY" secondItem="SSe-RJ-gsI" secondAttribute="centerY" id="Nqb-do-m7A"/>
+                                    <constraint firstItem="au6-ZR-nk1" firstAttribute="leading" secondItem="SSe-RJ-gsI" secondAttribute="leading" id="b5z-nE-0CQ"/>
+                                    <constraint firstItem="Qjk-lr-YHF" firstAttribute="centerY" secondItem="SSe-RJ-gsI" secondAttribute="centerY" id="f8v-tB-ezx"/>
+                                    <constraint firstItem="Vi8-sc-Qsk" firstAttribute="centerY" secondItem="SSe-RJ-gsI" secondAttribute="centerY" id="hx1-fe-r7R"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="WeE-xn-pj9">
+                                <rect key="frame" x="0.0" y="114" width="414" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ATK-rg-LCo"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WeE-xn-pj9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ERd-wp-eCd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WeE-xn-pj9" secondAttribute="trailing" id="GJ8-fL-GZJ"/>
+                            <constraint firstItem="WeE-xn-pj9" firstAttribute="top" secondItem="SSe-RJ-gsI" secondAttribute="bottom" constant="20" id="Ku5-Fi-DaA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SSe-RJ-gsI" secondAttribute="trailing" constant="20" id="NPN-sQ-ZLI"/>
+                            <constraint firstItem="SSe-RJ-gsI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OIR-TG-S5A"/>
+                            <constraint firstItem="SSe-RJ-gsI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="50/896" id="Qay-9k-Pc5"/>
+                            <constraint firstItem="WeE-xn-pj9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="50/896" id="TA4-Ig-p1r"/>
+                            <constraint firstItem="SSe-RJ-gsI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dsJ-Xz-1mk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chats" image="message.fill" catalog="system" id="jlh-4h-z8l"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="Vi8-sc-Qsk" id="brR-LN-SOF"/>
+                        <outlet property="editButton" destination="2OB-il-On2" id="ivY-iF-lAg"/>
+                        <outlet property="listButton" destination="au6-ZR-nk1" id="rrm-JU-8a4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="859.4202898550725" y="3.3482142857142856"/>
+        </scene>
+        <!--Calls-->
+        <scene sceneID="Kvq-Oj-hUB">
+            <objects>
+                <viewController id="Wvh-2n-juT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dEB-5q-0LT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FjB-U8-jni"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calls" image="video.fill" catalog="system" id="Uh5-KL-74r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bx3-A6-5lS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2170" y="3"/>
+        </scene>
+        <!--Stories-->
+        <scene sceneID="taJ-xT-RPj">
+            <objects>
+                <viewController id="djt-uP-HFy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x4U-3A-TWb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1Ft-HU-n26"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stories" image="rectangle.stack.fill.badge.plus" catalog="system" id="xKv-Si-jL8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRO-tM-JXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2170" y="737"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xqC-Eb-DbS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BD7-1L-tQ4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="igB-q6-nrb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="j5j-Wz-nc0"/>
+                        <segue destination="Wvh-2n-juT" kind="relationship" relationship="viewControllers" id="L7U-ea-b1n"/>
+                        <segue destination="LQe-Z7-WNS" kind="relationship" relationship="viewControllers" id="ThM-FL-YNh"/>
+                        <segue destination="djt-uP-HFy" kind="relationship" relationship="viewControllers" id="Ihx-Ay-GEv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2q-mz-xKj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="343"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="xDL-NK-OzP">
+            <objects>
+                <viewController id="LQe-Z7-WNS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17h-xL-N5h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cfe-s6-rUj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="People" image="person.2.fill" catalog="system" id="Mwg-oY-b13"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i94-u2-SGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="859" y="737"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.2.fill" catalog="system" width="128" height="81"/>
+        <image name="rectangle.stack.fill.badge.plus" catalog="system" width="128" height="118"/>
+        <image name="video.fill" catalog="system" width="128" height="81"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
