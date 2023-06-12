@@ -6,5 +6,9 @@ target 'Messanger App' do
   use_frameworks!
 
   # Pods for Messanger App
-pod 'JGProgressHUD'
+  pod 'JGProgressHUD'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 end

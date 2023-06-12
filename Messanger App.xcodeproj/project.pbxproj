@@ -17,6 +17,13 @@
 		E8750DAF2A30A84400151452 /* CallsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8750DAE2A30A84400151452 /* CallsVC.swift */; };
 		E8750DB32A31211000151452 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8750DB12A31211000151452 /* SignUpViewController.swift */; };
 		E8750DB42A31211000151452 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8750DB22A31211000151452 /* LoginViewController.swift */; };
+		E8CDCA092A34A72A00577A90 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDCA062A34A72A00577A90 /* StorageManager.swift */; };
+		E8CDCA0A2A34A72A00577A90 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDCA072A34A72A00577A90 /* AuthenticationManager.swift */; };
+		E8CDCA0B2A34A72A00577A90 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDCA082A34A72A00577A90 /* DatabaseManager.swift */; };
+		E8CDCA0F2A34A93A00577A90 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDCA0D2A34A93A00577A90 /* Message.swift */; };
+		E8CDCA102A34A93A00577A90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDCA0E2A34A93A00577A90 /* User.swift */; };
+		E8CDCA132A34A95D00577A90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDCA122A34A95D00577A90 /* Constants.swift */; };
+		E8CDCA152A34B70400577A90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8CDCA142A34B70400577A90 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,13 @@
 		E8750DAE2A30A84400151452 /* CallsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsVC.swift; sourceTree = "<group>"; };
 		E8750DB12A31211000151452 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E8750DB22A31211000151452 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E8CDCA062A34A72A00577A90 /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		E8CDCA072A34A72A00577A90 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		E8CDCA082A34A72A00577A90 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		E8CDCA0D2A34A93A00577A90 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E8CDCA0E2A34A93A00577A90 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E8CDCA122A34A95D00577A90 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E8CDCA142A34B70400577A90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +76,6 @@
 				7EE706BD60F18A82EB646003 /* Pods-Messanger App.debug.xcconfig */,
 				14DAB355E75A4AD6CAF09333 /* Pods-Messanger App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -94,6 +107,7 @@
 				E8750DA02A308E0A00151452 /* Assets.xcassets */,
 				E8750DA22A308E0A00151452 /* LaunchScreen.storyboard */,
 				E8750DA52A308E0A00151452 /* Info.plist */,
+				E8CDCA142A34B70400577A90 /* GoogleService-Info.plist */,
 			);
 			path = "Messanger App";
 			sourceTree = "<group>";
@@ -101,6 +115,9 @@
 		E8750DAB2A30A7D200151452 /* Viewcpntrollers */ = {
 			isa = PBXGroup;
 			children = (
+				E8CDCA112A34A95D00577A90 /* Utils */,
+				E8CDCA0C2A34A93A00577A90 /* Model */,
+				E8CDCA052A34A72A00577A90 /* API */,
 				E8750DB02A31211000151452 /* Authentication */,
 				E8750DAC2A30A81800151452 /* ChatsVC.swift */,
 				E8750DAE2A30A84400151452 /* CallsVC.swift */,
@@ -115,6 +132,33 @@
 				E8750DB22A31211000151452 /* LoginViewController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E8CDCA052A34A72A00577A90 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E8CDCA062A34A72A00577A90 /* StorageManager.swift */,
+				E8CDCA072A34A72A00577A90 /* AuthenticationManager.swift */,
+				E8CDCA082A34A72A00577A90 /* DatabaseManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E8CDCA0C2A34A93A00577A90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8CDCA0D2A34A93A00577A90 /* Message.swift */,
+				E8CDCA0E2A34A93A00577A90 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8CDCA112A34A95D00577A90 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E8CDCA122A34A95D00577A90 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8750DA42A308E0A00151452 /* LaunchScreen.storyboard in Resources */,
+				E8CDCA152A34B70400577A90 /* GoogleService-Info.plist in Resources */,
 				E8750DA12A308E0A00151452 /* Assets.xcassets in Resources */,
 				E8750D9F2A308E0500151452 /* Main.storyboard in Resources */,
 			);
@@ -233,11 +278,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8750DB42A31211000151452 /* LoginViewController.swift in Sources */,
+				E8CDCA0A2A34A72A00577A90 /* AuthenticationManager.swift in Sources */,
 				E8750DAF2A30A84400151452 /* CallsVC.swift in Sources */,
 				E8750DAD2A30A81800151452 /* ChatsVC.swift in Sources */,
+				E8CDCA092A34A72A00577A90 /* StorageManager.swift in Sources */,
 				E8750D982A308E0500151452 /* AppDelegate.swift in Sources */,
 				E8750D9A2A308E0500151452 /* SceneDelegate.swift in Sources */,
+				E8CDCA0F2A34A93A00577A90 /* Message.swift in Sources */,
 				E8750DB32A31211000151452 /* SignUpViewController.swift in Sources */,
+				E8CDCA0B2A34A72A00577A90 /* DatabaseManager.swift in Sources */,
+				E8CDCA102A34A93A00577A90 /* User.swift in Sources */,
+				E8CDCA132A34A95D00577A90 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
